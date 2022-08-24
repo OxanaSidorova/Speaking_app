@@ -29,7 +29,8 @@ from schema import *
 # d.session.commit()
 
 # Task - 3 (multiple times)
-for clg in Students.query.all():
-    print("- ",clg.name)
-    for language in clg.Foreign_language:
+
+for std in Students.query.all():
+    print("- ",std.name)
+    for language in std.foreign_language:
         print("\t - ",language.language_name)

@@ -6,7 +6,8 @@ class Students(d.Model):
     email = d.Column(d.String(100),nullable=False)
     country = d.Column(d.String(100),nullable=False)
     native_language = d.Column(d.String(20),nullable=False)
-    telephone = d.Column(d.Integer,nullable=False,primary_key=True)
+    telephone = d.Column(d.Integer,nullable=False)
+    foreign_language = d.relationship('Foreign_language')
 
 class Foreign_language(d.Model):
     language_id = d.Column(d.Integer,nullable=False,primary_key=True)
