@@ -1,5 +1,5 @@
 from flask import render_template
-from app import application
+from application.app import application
 from schema import *
 
 @application.route('/')
@@ -11,7 +11,7 @@ def student_list():
     all_students = Students.query.all()
     return render_template('all_students.html',list_of_names=all_students)
 
-@application.route('/college/<int:id>')
+@application.route('/student/<int:id>')
 def foreign_language(id):
     language_of_specific_student = Foregin_language.query.filter_by(student_id=id)
     student = Students.query.get(id)

@@ -1,5 +1,7 @@
+from os import environ
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+import secrets
 
 application = Flask(__name__)
 application.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'

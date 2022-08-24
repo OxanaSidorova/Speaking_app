@@ -3,4 +3,3 @@
 *.db
 .coverage
 .git
-tests
