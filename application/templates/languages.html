@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>{{students.student_name}}</title>
+    <title>{{student.student_name}}</title>
 </head>
 <body>
     <p>{{student.country}}</p>
     <p>{{student.native_language}}</p>
-    <p>{{language.language_name}}</p>
     <p>All languages</p>
     <table>
         <thead>
@@ -14,16 +13,14 @@
                 <th style="border: 1px solid black">Student name</th>
                 <th style="border: 1px solid black">Language Name</th>
                 <th style="border: 1px solid black">Native language</th>
-                <th style="border: 1px solid black">Foreign language</th>
             </tr>
         </thead>
         <tbody>
-            {% for language in list_of_names %}
+            {% for language in list_of_languages %}
             <tr>
-                <td style="border: 1px solid black">{{student.student_name}}</td>
+                <td style="border: 1px solid black">{{language.student_name}}</td>
                 <td style="border: 1px solid black">{{language.language_name}}</td>
-                <td style="border: 1px solid black">{{student.native_language}}</td>
-                <td style="border: 1px solid black">{{foreign_language(id)}}</td>
+                <td style="border: 1px solid black">{{language.native_language}}</td>
             </tr>
             {% endfor %}
         </tbody>

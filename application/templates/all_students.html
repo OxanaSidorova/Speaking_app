@@ -14,12 +14,12 @@
             </tr>
         </thead>
         <tbody>
-            {% for students in list_of_names %}
+            {% for student in list_of_names %}
             <tr>
                 <td style="border: 1px solid black">{{student.student_id}}</td>
                 <td style="border: 1px solid black">{{student.student_name}}</td>
                 <td style="border: 1px solid black">{{student.student_name}}</td>
-                <td style="border: 1px solid black"><a href="{{url_for('languages',id=student.student_id)}}">Check</a></td>
+                <td style="border: 1px solid black"><a href="{{url_for('foreign_language',id=student.student_id)}}">Check</a></td>
             </tr>
             {% endfor %}
         </tbody>
