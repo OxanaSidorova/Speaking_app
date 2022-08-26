@@ -17,7 +17,7 @@ class TestBase(LiveServerTestCase):
             DEBUG=True,
             TESTING=True
         )
-        return application.app
+        return application
 
     def setUp(self):
         from application.schema import Students
