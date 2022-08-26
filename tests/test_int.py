@@ -35,6 +35,6 @@ class TestBase(LiveServerTestCase):
 class TestAdd(TestBase):
 
     def test_index_route(self):
-        response = app.test_client().get('/')
+        response = application.test_client().get('/')
 
         assert response.status_code == 200
