@@ -24,7 +24,7 @@ class TestBase(LiveServerTestCase):
         d.create_all()  # create schema before we try to get the page
         #
         # test_student = Students(name="Test")
-        #
+        # test1_student = Students(name="Test") need to create a query
         # d.session.add(test_student)
         # d.session.commit()
 
