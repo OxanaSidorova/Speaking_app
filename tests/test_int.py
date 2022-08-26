@@ -3,32 +3,32 @@ from flask_testing import LiveServerTestCase
 from urllib.request import urlopen
 from flask import url_for
 
-from application import app, db
+from application.app import application, d
 
 
 class TestBase(LiveServerTestCase):
     TEST_PORT = 5050  # test port, doesn't need to be open
 
     def create_app(self):
-        app.config.update(
+        application.config.update(
             SQLALCHEMY_DATABASE_URI="sqlite:///",
             LIVESERVER_PORT=self.TEST_PORT,
             DEBUG=True,
             TESTING=True
         )
-        return app
+        return application.app
 
     def setUp(self):
-        from application.models import Games
-        db.create_all()  # create schema before we try to get the page
+        from application.schema import Students
+        d.create_all()  # create schema before we try to get the page
 
-        test_game = Games(name="Test")
-        db.session.add(test_game)
-        db.session.commit()
+        test_student = Students(name="Test")
+        d.session.add(test_student)
+        d.session.commit()
 
     def tearDown(self):
-        db.session.remove()
-        db.drop_all()
+        d.session.remove()
+        d.drop_all()
 
 
 class TestAdd(TestBase):
