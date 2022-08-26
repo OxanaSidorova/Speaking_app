@@ -10,12 +10,13 @@ This is the final project for the DevOps/cloud bootcamp.
 ### 1. Project Management and Version Control
 In the project was using Jira to track project using Agile Scrum methods.
 
-![](../../Documents/QA course/Speaking_app_final/Jira_24.08.png)
+<img width="1043" alt="Jira_24 08" src="https://user-images.githubusercontent.com/106552165/186918423-8d231851-9490-481a-8377-7632def7510e.png">
+
 
 progress 
 
-![](../../Documents/QA course/Speaking_app_final/Jira_24:08.png)
-progress
+<img width="1300" alt="Jira_24:08" src="https://user-images.githubusercontent.com/106552165/186918509-48baa593-4f90-402e-9130-7aaee7fc529e.png">
+
 
 <img width="1300" alt="Jira_24:08" src="https://user-images.githubusercontent.com/106552165/186744939-9972ffef-e26b-4025-a33d-d759f4087e39.png">
 
@@ -37,8 +38,8 @@ The backend - used SQLAlchemy to model and integrate with the database.
 ### A component-level diagram
 
 Illustrating how the application interfaces with the database.
-![](../../Documents/QA course/Speaking_app_final/App_diagram.png)
 
+<img width="696" alt="App_diagram" src="https://user-images.githubusercontent.com/106552165/186918695-1173ecd5-c02e-45cd-a83b-8af7f4b61f84.png">
 
 ### 3. Database
 
