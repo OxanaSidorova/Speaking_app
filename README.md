@@ -10,12 +10,11 @@ This is the final project for the DevOps/cloud bootcamp.
 ### 1. Project Management and Version Control
 In the project was using Jira to track project using Agile Scrum methods.
 
-<img width="1301" alt="Jira_1" src=“https://user-images.githubusercontent.com/106552165/186744973-2008ec65-dc71-4c35-8977-a1c948bd5f96.png">
+![](../../Documents/QA course/Speaking_app_final/Jira_24.08.png)
 
 progress 
 
-<img width="1043" alt="Jira_24 08" src=“https://user-images.githubusercontent.com/106552165/186744919-16b1df4b-2ebf-4be4-9751-cd3aa26c3916.png">
-
+![](../../Documents/QA course/Speaking_app_final/Jira_24:08.png)
 progress
 
 <img width="1300" alt="Jira_24:08" src="https://user-images.githubusercontent.com/106552165/186744939-9972ffef-e26b-4025-a33d-d759f4087e39.png">
