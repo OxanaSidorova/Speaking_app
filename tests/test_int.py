@@ -22,10 +22,11 @@ class TestBase(LiveServerTestCase):
     def setUp(self):
         from application.schema import Students
         d.create_all()  # create schema before we try to get the page
-
-        test_student = Students(name="Test")
-        d.session.add(test_student)
-        d.session.commit()
+        #
+        # test_student = Students(name="Test")
+        #
+        # d.session.add(test_student)
+        # d.session.commit()
 
     def tearDown(self):
         d.session.remove()
