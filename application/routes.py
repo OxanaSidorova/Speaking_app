@@ -1,6 +1,6 @@
 from flask import render_template
 from application.app import application
-from schema import *
+from application.schema import *
 
 @application.route('/')
 def root():
